@@ -1,0 +1,86 @@
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+}
+
+.heading {
+  font-size: 50px;
+  color: green;
+  font-family: "Garamond", "Baskerville Old Face", serif;
+
+}
+
+.indent{
+  text-indent: 50px;
+  font-size: 20px;
+  color: black;
+  font-family: "Garamond", "Baskerville Old Face", serif;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.subheading {
+  font-size: 35px;
+  color: brown;
+  font-family: "Garamond", "Baskerville Old Face", serif;
+}
+
+/* carousel */
+.mySlides {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.w3-display-container {align-content: center}
+.w3-display-bottommiddle {left:50%}
+.center-div{
+  margin: 0 auto;
+  width: 900px;
+}
+
+#about {
+  background-color: #ecd9c6;
+}
+
+div.background {
+  background-image: url("https://images.pexels.com/photos/957024/forest-trees-perspective-bright-957024.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  border: 1px solid black;
+}
+
+div.transbox {
+  margin: 50px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.8;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  color: #000000;
+}
+
+.tableText {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  font-family: "Garamond", "Baskerville Old Face", serif;
+}
+
+#edit {
+  padding-right: 10px;
+  float: right;
+  font-size: 10px;
+}
