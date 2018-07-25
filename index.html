@@ -181,6 +181,133 @@
 <!-- VOLUNTEER -->  
   
     
+    <style>
+.contain {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.contain:hover .overlay {
+  opacity: .75;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+a:link {
+  color: white;
+  font-size: 50px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+}
+
+a:active {
+    color: white;
+  }
+.room{
+  padding: 60px ;
+  /*border: 1px solid black;*/
+  text-align:center;
+  font-size: 80px;
+}
+</style>
+
+
+
+<style>
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'More';
+
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: .3em;
+  color: #666;
+  font-size: 1.5em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .5em;
+}
+
+/* Other style */
+/*body {
+  padding: 2%;
+}*/
+
+
+
+</style>
+    
     
     <center><h1 class = "room" id = "volunteer">Volunteer Sites</h1></center>
 
