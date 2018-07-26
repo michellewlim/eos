@@ -210,7 +210,7 @@ input, select, button{
   bottom: 0;
   left: 0;
   right: 0;
-  height: 75%;
+  height: 55%;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
@@ -234,7 +234,7 @@ input, select, button{
 }
 .textName2 {
   color: white;
-  font-size: 10px;
+  font-size: 15px;
   position: absolute;
   top: 60%;
   left: 50%;
