@@ -47,7 +47,7 @@ function carousel() {
 }
 
 
-/* map */
+// map
 function myMap() {
 var mapProp= {
   center:new google.maps.LatLng(38,238),
