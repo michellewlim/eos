@@ -241,7 +241,7 @@ input, select, button{
   color: white;
   font-size: 15px;
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
