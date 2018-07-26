@@ -45,3 +45,30 @@ function carousel() {
     dots[slideIndex-1].className += " w3-white";
     setTimeout(carousel, 5000); // Change image every 5 seconds
 }
+
+
+/* map */
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(38,238),
+  zoom:8
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({
+  position:{lat:37.5578,lng:-121.9737},
+  map:map
+});
+
+var infoWindow = new google.maps.InfoWindow({
+  content : '<h1>Tule Ponds</h1>'
+});
+var marker = new google.maps.Marker({
+  position:{lat:39,lng:-128},
+  map:map
+});
+
+var infoWindow = new google.maps.InfoWindow({
+  content : '<h1>Tule Ponds</h1>'
+});
+}
