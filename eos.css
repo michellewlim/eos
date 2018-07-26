@@ -314,4 +314,33 @@ a:active {
   border-radius: .5em;
 }
 
+/* facts and stats */
+div.skypara{
+  text-indent: 50px;
+font-size: 20px;
+}
+div.landpara{
+  text-indent: 50px;
+  font-size: 20px;
 
+}
+div.oceanpara{
+  text-indent: 50px;
+  font-size: 20px;
+
+}
+#factsstats{
+  font-size: 20px;
+}
+#sky{
+  font-size: 20px;
+  font-style: italic;
+
+}
+#land{
+  font-size: 20px;
+  font-style: italic;
+}
+#ocean{
+  font-size: 20px;
+  font-style: italic;
