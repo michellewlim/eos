@@ -14,6 +14,7 @@
     width: 700px;
 }
 
+/* text */
 .heading {
   font-size: 50px;
   color: green;
@@ -50,6 +51,7 @@
   width: 900px;
 }
 
+/* about section */
 #about {
   background-color: #ecd9c6;
 }
@@ -79,14 +81,17 @@ div.transbox p {
   font-family: "Garamond", "Baskerville Old Face", serif;
 }
 
+/* last edited section at bottom */
 #edit {
   padding-right: 10px;
   float: right;
   font-size: 10px;
 }
 
-
-
+/* news section */
+#News {
+  background-color: #99ccff;
+}
 
 /* Navbar container */
 .navbar {
