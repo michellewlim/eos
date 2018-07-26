@@ -137,7 +137,7 @@ input, select, button{
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Add a red background color to navbar links on hover */
+/* Add a pinky background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   /*background-color: red;*/
   background: rgba(212,161,144,0.6);
@@ -148,6 +148,7 @@ input, select, button{
   display: none;
   position: absolute;
   background-color: #f9f9f9;
+  color: black;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
