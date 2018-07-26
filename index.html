@@ -117,10 +117,13 @@
       </div>
     </div>
     
+<!-- call Java Script as part of carousel -->
+    <script src = "eos.js"> </script>
+    
 <!-- News -->
     <div id = "news">
       <center>
-        <a class="twitter-timeline" data-width="1000" data-height="700" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/angelinaluo/lists/environmental-news?ref_src=twsrc%5Etfw">A Twitter List by angelinaluo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" data-width="1000" data-height="700" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/EOS04426417/lists/environmental-news?ref_src=twsrc%5Etfw">A Twitter List by EOS04426417</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </center>
     </div>
     
@@ -210,42 +213,12 @@
             <center><h3><p id = "submission">Disclaimer! We do not guarantee that any of these facts are true, they are merely submissions from our readers with their sources included</p></h3></center>
             <center><button class="btn btn-success" onclick=" window.open('https://docs.google.com/forms/d/e/1FAIpQLSdgHPr7_LnwwvEd6G1gsff_I1EU9Owvj71KAfCVFwlWayniMA/viewform?usp=pp_url','_blank')"> Submit your own fact!</button></center>
           </div>
-            
+    </div>
+           
 <!-- VOLUNTEER -->
-    <h>Volunteer Map</h1>
+    <h1 class = "heading"><center>Volunteer Map</center></h1>
 
     <div id="googleMap" style="width:100%;height:400px;"></div>
-
-    <script>
-      function myMap() {
-        var mapProp= {
-          center:new google.maps.LatLng(38,238),
-          zoom:8
-        };
-
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-        var marker = new google.maps.Marker({
-          position:{lat:37.5578,lng:-121.9737},
-          map:map
-        });
-
-        var infoWindow = new google.maps.InfoWindow({
-          content : '<h1>Tule Ponds</h1>'
-        });
-        var marker = new google.maps.Marker({
-          position:{lat:39,lng:-128},
-          map:map
-        });
-
-        var infoWindow = new google.maps.InfoWindow({
-          content : '<h1>Tule Ponds</h1>'
-        });
-        }
-
-
-
-
-    </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVaUTsc_KSJ3BfNxrXAhPKYxFfCuaRPQA&callback=myMap"></script>
 
@@ -391,15 +364,6 @@
       <p>Last edit: August 1, 2018</p>
     </div>
     
-<!-- call Java Script as part of carousel -->
-    <script src = "eos.js"> </script>
-  
-  
-  
-  
-  
-  
-  
   
   
   </body>
