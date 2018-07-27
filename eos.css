@@ -338,7 +338,8 @@ p {
 #ocean{
   font-size: 20px;
   font-style: italic;
-
+}
+    
 /* fact carousel */
 .factSlides {
 display: block;
