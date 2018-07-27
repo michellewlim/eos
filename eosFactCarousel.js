@@ -20,10 +20,10 @@ function showDivs(n) {
      x[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
+     dots[i].className = dots[i].className.replace(" w3-grey", "");
   }
   x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-white";
+  dots[slideIndex-1].className += " w3-grey";
 }
 
 function carousel() {
@@ -34,11 +34,11 @@ function carousel() {
        x[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-       dots[i].className = dots[i].className.replace(" w3-white", "");
+       dots[i].className = dots[i].className.replace(" w3-grey", "");
     }
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1}
     x[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " w3-white";
+    dots[slideIndex-1].className += " w3-grey";
     setTimeout(carousel, 5000); // Change image every 5 seconds
 }
