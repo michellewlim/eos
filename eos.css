@@ -316,18 +316,11 @@ a:active {
 }
 
 /* facts and stats */
-div.skypara{
-  text-indent: 50px;
-font-size: 20px;
-}
-div.landpara{
-  text-indent: 50px;
-  font-size: 20px;
-
-}
-div.oceanpara{
-  text-indent: 50px;
-  font-size: 20px;
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  font-family: "Garamond", "Baskerville Old Face", serif;
 
 }
 #factsstats{
