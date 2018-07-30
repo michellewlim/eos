@@ -360,6 +360,38 @@ div.ao {
             <center><h3><p id = "submission">Disclaimer! We do not guarantee that any of these facts are true, they are merely submissions from our readers with their sources included</p></h3></center>
             <center><button class="read-more-trigger" onclick=" window.open('https://docs.google.com/forms/d/e/1FAIpQLSdgHPr7_LnwwvEd6G1gsff_I1EU9Owvj71KAfCVFwlWayniMA/viewform?usp=pp_url','_blank')"> Submit your own fact!</button></center>
           </div>
+          ---------
+          <form id='factstat'>
+      <p>
+        <label>Name (last, first)*</label>
+        <input id='namefact' name='namefact' type='text'>
+      </p><p>
+        <label>Email Address*</label>
+        <input id='email1' name='email1' type='email'>
+      </p><p>
+        <label>What city, state, or country do you live in?*</label>
+        <input id='city' name='city' type='text'>
+      </p>
+      <p>
+        <label>What date did you access this fact or stat (mm/dd/yyyy)*</label>
+        <input id='accessdate' name='accessdate' type='text'>
+      </p>
+      <p>
+        <label>Please paste the fact or stat*</label>
+        <input id='factpaste' name='factpaste' type='text'>
+      </p>
+      <p>
+        <label>Please paste the link to this fact or stat*</label>
+        <textarea id='link' name='link' rows='7'></textarea>
+      </p>
+        <div id='success'></div>
+        <button type='submit'>Send</button>
+        <p id= "contactsubmit"></p>
+    </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src='facts.js'></script>
     </div>
     </div>
   </div>
