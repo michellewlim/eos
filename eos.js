@@ -102,11 +102,12 @@ $("#voluntcontact").submit(function(event){
         $('#voluntcontact textarea[name = "subject"]').val('');
         document.getElementById("localsubmit").innerHTML = "Submission successful! Thank you for your contribution."
         //window.location = '#local';
+        event.preventDefault();
     });
 
 
     // Prevent default posting of form
-    event.preventDefault();
+    
 });
 
 
