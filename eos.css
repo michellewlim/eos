@@ -358,9 +358,11 @@ input, select, button{
     line-height: 2;
     border: 1px solid #ddd;
     border-radius: .5em;
-    padding: 50px;
-    margin:0 auto;
-  
+    position: absolute;
+  margin-left: 650;
+  margin-bottom: 20;
+  z-index: 8;
+padding-bottom: 10px;padding-top: 10px; padding-left:20px; padding-right:20px;
   }
   
   #volunteerspace1{
