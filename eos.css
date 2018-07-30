@@ -487,6 +487,9 @@ p {
 #factsstatsheader {
   background-image: url("blue-clouds-day-53594.jpg");
 }
+#skybanner{
+    background-image: url("skyheader.JPG);
+}
 
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
