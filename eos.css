@@ -485,7 +485,9 @@ p {
 }
 
 #factsstatsheader {
-  background-image: url("factstatheader1.JPG");
+  
+  background-image: url("factstatheaderJPG.JPG");
+
 }
 #skybanner{
     background-image: url("skyheader.JPG);
