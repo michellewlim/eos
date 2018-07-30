@@ -132,46 +132,78 @@
       </center>
 
 <!-- carousel -->
-      <div class="slideshow-container">
-
-        <div class="factSlides fade">
-        <div class="numbertext">1 / 5</div>
-        <img src="usa.png" style="width:100%" height = "600px">
+      <div class="row">
+        <div class="column">
+          <img src="usa.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
         </div>
-
-        <div class="factSlides fade">
-        <div class="numbertext">2 / 5</div>
-        <img src="world.png" style="width:100%" height = "600px">
+        <div class="column">
+          <img src="world.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
         </div>
-
-        <div class="factSlides fade">
-        <div class="numbertext">3 / 5</div>
-        <img src="reef.png" style="width:100%" height = "600px">
+        <div class="column">
+          <img src="reef.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
         </div>
-
-        <div class="factSlides fade">
-        <div class="numbertext">4 / 5</div>
-        <img src="forests.png" style="width:100%" height = "600px">
+        <div class="column">
+          <img src="forests.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
         </div>
-
-        <div class="factSlides fade">
-        <div class="numbertext">5 / 5</div>
-        <img src="grapheos.png" style="width:100%" height = "600px">
+        <div class="column">
+          <img src="grapheos.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
         </div>
+      </div>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
 
+          <div class="factSlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="usa.png" style="width:100%">
+          </div>
+
+          <div class="factSlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="world.png" style="width:100%">
+          </div>
+
+          <div class="factSlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="reef.png" style="width:100%">
+          </div>
+
+          <div class="factSlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="forests.png" style="width:100%">
+          </div>
+          
+          <div class="factSlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="grapheos.png" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+
+          <div class="column">
+            <img class="demo cursor" src="usa.png" style="width:100%" onclick="currentSlide(1)" alt="Average Household Carbon Emissions">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="world.png" style="width:100%" onclick="currentSlide(2)" alt="Number of Deaths from Outdoor Air Pollution (2016)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="reef.png" style="width:100%" onclick="currentSlide(3)" alt="Great Barrier Reef Wipeout">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="forests.png" style="width:100%" onclick="currentSlide(4)" alt="Top 5 World's Forests">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="grapheos.png" style="width:100%" onclick="currentSlide(5)" alt="Sulfur Dioxide, by World Region.">
+          </div>
         </div>
-        <br>
-
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-        </div>      
+      </div>
 
 <!-- Call js -->
     <script src = "eosFactCarousel.js"> </script>
