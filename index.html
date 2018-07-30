@@ -36,14 +36,14 @@
         </button>
       </div>
       <div class="dropdown">
-        <button class="dropbtn"><a href="#facts">Facts&Stats</a>
+        <button class="dropbtn"><a href="#F">Facts&Stats</a>
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content" >
-          <span id = "skyheader"><a href="#sky">Sky</a></span>
-          <span id = "landheader"><a href="#land">Land</a></span>
-          <span id = "oceanheader"><a href="#ocean">Ocean</a></span>
-          <span id = "sourceheader"><a href="#sources">Sources</a></span>
+          <span id = "skyheader"><a href="#skysect">Sky</a></span>
+          <span id = "landheader"><a href="#landsect">Land</a></span>
+          <span id = "oceanheader"><a href="#seasect">Ocean</a></span>
+          <span id = "sourceheader"><a href="#sourcesect">Sources</a></span>
           <span id = "submissionheader"><a href = "#submissions">Submissions</a></span>
         </div>
       </div>
@@ -54,7 +54,7 @@
         </button>
         <div class="dropdown-content" >
           <span><a href="#volun">Volunteer</a></span>
-          <span><a href="#donat">Donations</a></span>
+          <span><a href="#donations">Donations</a></span>
           <span><a href="#local">Local</a></span>
           <span><a href="#spread">Spread the Info</a></span>
           <span><a href = "#shop">Sustainable Shopping</a></span>
@@ -167,9 +167,11 @@
     
 <!-- News -->
     <div id = "news">
+      <p>
       <center>
         <a class="twitter-timeline" data-width="1000" data-height="700" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/EOS04426417/lists/environmental-news?ref_src=twsrc%5Etfw">A Twitter List by EOS04426417</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </center>
+        </p>
     </div>
     
 <!-- Facts and Stats -->
@@ -386,7 +388,9 @@ div.ao {
         <label>Please paste the link to this fact or stat*</label>
         <textarea id='link' name='link' rows='7'></textarea>
       </p>
+                                            
         <div id='success'></div>
+        <p id = "submissions"></p>                                    
         <button type='submit'>Send</button>
         <p id= "contactsubmit"></p>
     </form>
@@ -429,8 +433,9 @@ div.a {
 }
 </style>
 <!--<body style="background-color:powderblue;"-->
+                                           
 <div class = "nancybackground">
-    <h1 class = "heading"><center>Ways you can help!</center></h1>
+    <div class = "heading" id = "helpenv">Ways you can help!</div>
    <center><img src="help2.0.jpg"  height="500" width="900" alt="hello"></center>
 
 
@@ -441,7 +446,7 @@ div.a {
       
 <!-- <div class="a"><p class="yo"> -->
 <div class="transbox2"><div class="background2">
-  <center><h1 class = "subheading"> Spreading the Word </h1></center>
+  <div class = "subheading" id = "spread"> Spreading the Word </div>
   <div class="a"><p class="yo">
 
 Social media is present in our daily lives and makes it easy to spread awareness about
@@ -453,7 +458,7 @@ allows others to realize the dilemma we’re facing and motivate them to help th
 word of mouth use case.Spread awareness,
 not germs. If you love this planet or want to live a pleasant life, protect it. </p></div>
 
-<h1 class = "subheading"><center> Donations </h1></center>
+<div class = "subheading" id = "donations">Donations </div>
 <div class="a"> <p class="yo">
 
 There are many organizations and scientific researches that are dedicated to solving
