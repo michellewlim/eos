@@ -633,3 +633,341 @@ img.hover-shadow {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+
+
+
+
+
+
+/*NANCY DONATIONS*/
+
+
+h2
+{ font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman",
+ serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; }
+
+ .camy {
+   position: relative;
+   width: 50%;
+ }
+
+ .igar{
+   display: block;
+   width: 100%;
+   height: auto;
+ }
+
+ .olive {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   width: 200%;
+   opacity: 0;
+   transition: .5s ease;
+   background-color: #008CBA;
+ }
+
+ .camy:hover .olive {
+   opacity: 1;
+ }
+
+ .tes {
+   color: white;
+   font-size: 20px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+
+
+ .imax{
+     display: inline;
+     padding: 10px;
+}
+
+
+  .tom {
+    position: relative;
+    width: 100%;
+  }
+
+  .bob {
+    display: block;
+    width: 50%;
+    height: auto;
+  }
+
+
+  .amy {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+
+  .tom:hover .amy {
+    opacity: 1;
+  }
+
+  .gi {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-60%, -50%);
+    text-align: right;
+  }
+
+  .c {
+    position: relative;
+    width: 50%;
+  }
+
+  .i {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .o {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 200%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+
+  .c:hover .o {
+    opacity: 1;
+  }
+
+  .t {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+  .imagebob {
+      display: inline;
+      padding: 10px;
+  }
+  .cat{
+    position: relative;
+    width: 50%;
+  }
+
+  .g {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .sis {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 180%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+
+  .cat:hover .sis {
+    opacity: 1;
+  }
+
+  .dad {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-60%, -50%);
+    text-align: right;
+ }
+
+
+
+  .mom {
+      display: inline;
+      padding: 10px;
+ }
+
+
+ .con {
+   position: relative;
+   width: 50%;
+ }
+
+ .ima {
+   display: block;
+   width: 100%;
+   height: auto;
+ }
+
+ .ove {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 98%;
+   width: 350%;
+   opacity: 0;
+   transition: .5s ease;
+   background-color: #008CBA;
+ }
+
+ .con:hover .ove {
+   opacity: 1;
+ }
+
+ .tex {
+   color: white;
+   font-size: 15px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-100%, -50%);
+   text-align: right;
+}
+
+
+
+ .imaga {
+     display: inline;
+     padding: 10px;
+
+}
+.cont {
+   position: relative;
+   width: 50%;
+ }
+
+ .imag {
+   display: block;
+   width: 100%;
+   height: 120%;
+ }
+
+ .over {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   width: 250%;
+   opacity: 0;
+   transition: .5s ease;
+   background-color: #008CBA;
+ }
+
+ .cont:hover .over {
+   opacity: 1;
+ }
+
+ .textf {
+   color: white;
+   font-size: 15px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-80%, -50%);
+   text-align: right;
+}
+
+
+
+ .imagg {
+     display: inline;
+     padding: 10px;
+}
+
+.z{
+  position: relative;
+  width: 50%;
+}
+
+.y {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.x {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 300%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.z:hover .x{
+  opacity: 1;
+}
+
+.w {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-90%, -45%);
+  text-align: center;
+}
+
+
+
+.v {
+    display: inline;
+    padding: 10px;
+}
