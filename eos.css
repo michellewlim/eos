@@ -494,7 +494,7 @@ p {
     background-image: url("blue-clouds-day-53594.jpg");
 }
 #landbanner{
-    background-image: url("arialland.png");
+    background-image: url("land.png");
     
 }
 #seabanner{
@@ -595,17 +595,4 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
-}
-
-button {
-  background-color: #d1e0e0;
-  border: none;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  color: white;
-}
-
-button:hover{
-  background-color: #f0f5f5;
 }
