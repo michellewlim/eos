@@ -42,7 +42,7 @@ function carousel() {
     dots[slideIndex-1].className += " w3-white";
     setTimeout(carousel, 5000); // Change image every 5 seconds
 }
-
+console.log("debugging?????");
 // VOLUNTEER CONTACT US + MAP
 // Variable to hold request
 var request;
