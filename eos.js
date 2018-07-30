@@ -70,44 +70,49 @@ console.log("here");
 
     // Fire off the request to /form.php
     request = $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbyaYLLE41gCTIRPaZn65xagYENQgixtxP0sFd4m7kUZ4_Od8I0/exec",
-        type: "post",
-        data: serializedData
+      url: "https://script.google.com/macros/s/AKfycbyaYLLE41gCTIRPaZn65xagYENQgixtxP0sFd4m7kUZ4_Od8I0/exec",
+      type: "post",
+      data: serializedData
+      
     });
-    console.log("herehere");
+    
     // Callback handler that will be called on success
     request.done(function (response, textStatus, jqXHR){
-        // Log a message to the console
-        console.log("Hooray, it worked!");
-        console.log(response);
-        console.log(textStatus);
-        console.log(jqXHR);
+      
+      // Log a message to the console
+      console.log("Hooray, it worked!");
+      console.log(response);
+      console.log(textStatus);
+      console.log(jqXHR);
     });
 
     // Callback handler that will be called on failure
     request.fail(function (jqXHR, textStatus, errorThrown){
-        // Log the error to the console
-        console.error(
-            "The following error occurred: "+
-            textStatus, errorThrown
-        );
+      
+      // Log the error to the console
+      console.error(
+          "The following error occurred: "+
+          textStatus, errorThrown
+      );
     });
 
     // Callback handler that will be called regardless
     // if the request failed or succeeded
     request.always(function () {
-        // Reenable the inputs
-        $inputs.prop("disabled", false);
-        $('#voluntcontact input[type="text"]').val('');
-        $('#voluntcontact textarea[name = "subject"]').val('');
-        document.getElementById("localsubmit").innerHTML = "Submission successful! Thank you for your contribution."
-        //window.location = '#local';
+      
+      // Reenable the inputs
+      $inputs.prop("disabled", false);
+      $('#voluntcontact input[type="text"]').val('');
+      $('#voluntcontact textarea[name = "subject"]').val('');
+      document.getElementById("localsubmit").innerHTML = "Submission successful! Thank you for your contribution."
+      //window.location = '#local';
         
     });
 
 
     // Prevent default posting of form
-    event.preventDefault();
+  
+  event.preventDefault();
 });
 
 
