@@ -201,9 +201,63 @@
           </div>
         </div>
       </div> -->
+      
+      <div class="row">
+        <div class="column">
+          <img src="usa.png" style="width:100%" onclick="openModal();currentFSlides(1)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="world.png" style="width:100%" onclick="openModal();currentFSlides(2)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="reef.png" style="width:100%" onclick="openModal();currentFSlides(3)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="forests.png" style="width:100%" onclick="openModal();currentFSlides(4)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="grapheos.png" style="width:100%" onclick="openModal();currentFSlides(5)" class="hover-shadow cursor">
+        </div>
+      </div>
 
-<!-- Call js --> <!--
-    <script src = "eosFactCarousel.js"> </script> -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="factSlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="usa.png" style="width:100%">
+          </div>
+
+          <div class="factSlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="world.png" style="width:100%">
+          </div>
+
+          <div class="factSlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="reef.png" style="width:100%">
+          </div>
+
+          <div class="factSlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="forests.png" style="width:100%">
+          </div>
+          
+          <div class="factSlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="grapheos.png" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+<!-- Call js -->
+    <script src = "eosFactCarousel.js"> </script>
       
 <!-- Fact and stats -->
       
