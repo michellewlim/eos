@@ -492,7 +492,12 @@ p {
 #skybanner{
     background-image: url("blue-clouds-day-53594.jpg");
 }
-
+#landbanner{
+    background-image: url("landheader.JPG");
+}
+#seabanner{
+    background-image: url("oceanheader.JPG.JP2");
+}
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .factSlides {display: none}
