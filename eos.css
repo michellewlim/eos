@@ -127,7 +127,7 @@ input, select, button{
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 12px;
+  font-size: 16px;
   border: none;
   outline: none;
   color: black;
@@ -176,7 +176,7 @@ input, select, button{
 
 /* Page content */
 .content {
-  padding: 16px;
+  padding: 12px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
