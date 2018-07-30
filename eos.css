@@ -197,123 +197,267 @@ input, select, button{
 
 
 
+
+
 /*Volunteer*/
 
-.contain {
-  position: relative;
-  width: 100%;
-}
-
-.volunteerimage {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: black;
-}
-
-.contain:hover .overlay {
-  opacity: .75;
-}
-
-.textName {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  white-space: nowrap;
-}
-.textName2 {
-  color: white;
-  font-size: 15px;
-  position: absolute;
-  top: 66%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-a:link {
-  color: white;
-  font-size: 50px;
-    text-decoration: none;
-}
-
-a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    color: grey;
-}
-
-a:active {
-    color: white;
+.voluntsubmit {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: brown;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
   }
-.room{
-  padding: 60px ;
-  /*border: 1px solid black;*/
-  text-align:center;
-}
+  
+  .voluntsubmit span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .voluntsubmit span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .voluntsubmit:hover span {
+    padding-right: 23px;
+    opacity: .8;
+  }
+  
+  .voluntsubmit:hover span:after {
+    opacity: .8;
+    right: 0;
+  }
 
-#volunteerspace1 {
+
+  .contain {
+    position: relative;
+    width: 100%;
+  }
+  
+  .volunteerimage {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+  }
+  
+  .contain:hover .overlay {
+    opacity: .75;
+  }
+  
+  .textName {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .textName2 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  a:link {
+    color: white;
+    font-size: 50px;
+      text-decoration: none;
+  }
+  
+  a:visited {
+      color: white;
+      text-decoration: none;
+  }
+  
+  a:hover {
+      color: grey;
+  }
+  
+  a:active {
+      color: white;
+    }
+  .room{
+    padding: 60px ;
+    /*border: 1px solid black;*/
+    text-align:center;
+    font-size: 80px;
+  }
+  
+  .read-more-state {
+    display: none;
+  
+  }
+  
+  .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+  
+  }
+  
+  .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+  
+  }
+  
+  .read-more-state ~ .read-more-trigger:before {
+    content: 'More';
+  
+  }
+  
+  .read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Less';
+  
+  }
+  
+  .read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: .3em;
+    color: #666;
+    font-size: 1.5em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .5em;
+  
+  }
+  
+  #volunteerspace1{
     padding-right: 40px;
-}
+  }
+  
+  .my-btn-cent {
+  
+      display:block;
+      margin:50%;
+  
+  }
+  
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+      box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+  }
+  
+  input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+      background-color: #45a049;
+  }
+  
+  input, placeholder{
+    font-size: 20px;
+  }
+  textarea, placeholder{
+    font-size: 20px;
+  }
+  /* Style the container/contact section */
+  .voluntcontainer {
+      border-radius: 5px;
+      background-color: #C9AEA5;
+      padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .voluntcolumn {
+      float: left;
+      width: 50%;
+      margin-top: 6px;
+      padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .voluntrow:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+      .voluntcolumn, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+      }
+  }
 
-.read-more-state {
-  display: none;
-}
+  #localsubmit{
+      font-size: 20px;
+  }
 
-.read-more-target {
-  opacity: 0;
-  max-height: 0;
-  font-size: 0;
-  transition: .25s ease;
-}
 
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
-  opacity: 1;
-  font-size: inherit;
-  max-height: 999em;
-}
 
-.read-more-state ~ .read-more-trigger:before {
-  content: 'More';
 
-}
 
-.read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Less';
-}
 
-.read-more-trigger {
-  cursor: pointer;
-  display: inline-block;
-  padding: .3em;
-  color: #666;
-  font-size: 1.5em;
-  line-height: 2;
-  border: 1px solid #ddd;
-  border-radius: .5em;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 /* facts and stats */
 p {
