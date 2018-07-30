@@ -49,7 +49,7 @@ var request;
 
 // Bind to the submit event of our form
 $("#voluntcontact").submit(function(event){
-
+console.log("here");
     // Abort any pending request
     if (request) {
         request.abort();
@@ -74,7 +74,7 @@ $("#voluntcontact").submit(function(event){
         type: "post",
         data: serializedData
     });
-
+    console.log("herehere");
     // Callback handler that will be called on success
     request.done(function (response, textStatus, jqXHR){
         // Log a message to the console
@@ -102,12 +102,12 @@ $("#voluntcontact").submit(function(event){
         $('#voluntcontact textarea[name = "subject"]').val('');
         document.getElementById("localsubmit").innerHTML = "Submission successful! Thank you for your contribution."
         //window.location = '#local';
-        event.preventDefault();
+        
     });
 
 
     // Prevent default posting of form
-    
+    event.preventDefault();
 });
 
 
