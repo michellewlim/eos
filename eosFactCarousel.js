@@ -1,17 +1,36 @@
-var slideFIndex = 1;
-showFDivs(slideFIndex);
-
-function plusFDivs(m) {
-  showFDivs(slideFIndex += m);
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
 }
 
-function showFDivs(m) {
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideFIndex = 1;
+showFSlides(slideFIndex);
+
+function plusFSlides(m) {
+  showFSlides(slideFIndex += m);
+}
+
+function currentFSlide(n) {
+  showFSlides(slideFIndex = m);
+}
+
+function showSlides(m) {
   var t;
-  var y = document.getElementsByClassName("factSlides");
-  if (m > y.length) {slideFIndex = 1}    
-  if (m < 1) {slideFIndex = y.length}
-  for (t = 0; i < y.length; t++) {
-     y[t].style.display = "none";  
+  var slides = document.getElementsByClassName("factSlides");
+  var circ = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (m > slides.length) {slideFIndex = 1}
+  if (m < 1) {slideFIndex = slides.length}
+  for (t = 0; t < slides.length; t++) {
+      slides[t].style.display = "none";
   }
-  y[slideFIndex-1].style.display = "block";  
+  for (t = 0; t < circ.length; t++) {
+      circ[t].className = circ[t].className.replace(" active", "");
+  }
+  slides[slideFIndex-1].style.display = "block";
+  circ[slideIndex-1].className += " active";
+  captionText.innerHTML = circ[slideFIndex-1].alt;
 }
