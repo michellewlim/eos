@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EOS: Earth, Ocean, Sky</title>
+
+    <link
+    rel = "stylesheet"
+    href = "eos.css">
+    <link
+    rel="stylesheet"
+    href="https://www.w3schools.com/w3css/4/w3.css">
+
+     
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+
+  </head>
+  <body>
+
+<!-- Nav Bar -->
+    <div class="navbar">
+    <!--<a href="#home">Home</a>-->
+     <div class="dropdown">
+      <button class="dropbtn"><a href="#home">Home</a>
+           <i class="fa fa-caret-down"></i>
+          </button>
+        </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="#news">News</a>
+           <i class="fa fa-caret-down"></i>
+        </button>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="#facts">Facts&Stats</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" >
+          <span id = "skyheader"><a href="#sky">Sky</a></span>
+          <span id = "landheader"><a href="#land">Land</a></span>
+          <span id = "oceanheader"><a href="#ocean">Ocean</a></span>
+          <span id = "sourceheader"><a href="#sources">Sources</a></span>
+          <span id = "submissionheader"><a href = "#submissions">Submissions</a></span>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn"><a href = "#helpenv">How You Can Help</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" >
+          <span><a href="#volun">Volunteer</a></span>
+          <span><a href="#donat">Donations</a></span>
+          <span><a href="#local">Local</a></span>
+          <span><a href="#spread">Spread the Info</a></span>
+          <span><a href = "#shop">Sustainable Shopping</a></span>
+        </div>
+      </div>
+
+
+      <div class="dropdown">
+        <button class="dropbtn"><a href = "#about">About</a>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" >
+          <span><a href="#aboutUs">About Us</a></span>
+          <span><a href="#whyCare">Why Care</a></span>
+          <span><a href="#mission">Mission</a></span>
+          <span><a href="#vision">Vision</a></span>
+        </div>
+      </div>
+
+
+
+  </div>
+<!-- Home -->
+    <div id = "home">
+      <div class="container">
+        <img src="https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="nature" style="width:100%;">
+        <img class="centered" src = "EOS_symbol.png">
+      </div>
+      <h1 class = "heading" class = "room"><center>1 Person, 7 Billion Impact</center></h1>
+      <div class = "indent">
+        <p>Living day by day in our busy lives, it is easy to feel immortal, untouchable, even ephemeral.
+        What does it matter that we may throw a wrapper onto the street as we walk by.
+        However, our isolated actions culminate and multiply in impact, spanning the world and cutting years off of our futures. </p>
+        <p>For better or worse, one person among the seven billion people inhabiting the Earth can make an impact.</p>
+      </div>
+
+<!-- Carousel -->
+      <div class="center-div">
+        <div class="w3-content w3-display-container">
+          <img class="mySlides" src="https://tinyurl.com/yay8aw3j" width="70%" height="400px">
+          <img class="mySlides" src="https://tinyurl.com/y9aaa93x" width="70%" height="400px">
+          <img class="mySlides" src="https://tinyurl.com/y83hsmen" width="70%" height="400px">
+          <img class="mySlides" src="https://tinyurl.com/ybek3k96" width="70%" height="400px">
+          <img class="mySlides" src="https://tinyurl.com/y8s6ajpj" width="70%" height="400px">
+          <img class="mySlides" src="https://tinyurl.com/ycanb3l3" width="70%" height="400px">
+          <img class="mySlides" src="https://tinyurl.com/yam9wrd2" width="70%" height="400px">
+
+          <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:70%">
+            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<!-- call Java Script as part of carousel -->
+    <script src = "eos.js"> </script>
+    
+<!-- News -->
+    <div id = "news">
+      <center>
+        <a class="twitter-timeline" data-width="1000" data-height="700" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/EOS04426417/lists/environmental-news?ref_src=twsrc%5Etfw">A Twitter List by EOS04426417</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </center>
+    </div>
+    
+<!-- Facts and Stats -->
+    <div id = "Facts&Stats">
+      <center><h1 class = "heading" style = "padding-cdenter:16px" id = "factsstatsheader">Facts & Stats</h1>
+        <p id = "factsstats">Here are some facts and stats on the devasting effects caused by ignoring our environments needs.</p>
+      </center>
+
+<!-- carousel -->
+      <div class="slideshow-container">
+
+        <div class="factSlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="usa.png" style="width:100%" height = "600px">
+        </div>
+
+        <div class="factSlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="world.png" style="width:100%" height = "600px">
+        </div>
+
+        <div class="factSlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="reef.png" style="width:100%" height = "600px">
+        </div>
+
+        <div class="factSlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="forests.png" style="width:100%" height = "600px">
+        </div>
+
+        <div class="factSlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="grapheos.png" style="width:100%" height = "600px">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+
+      </div>
+
+<!-- Call js -->
+    <script src = "eosFactCarousel.js"> </script>
+      
+<!-- Fact and stats -->
+      
+        <div id = "skysect">
+          <h1 class = "subheading" id = "skybanner"><center>Facts & Stats About the Atmosphere (sky).</center></h1>
+          <p id = "sky">People who live in places with high levels of air pollutants have a 20% higher risk of death from lung cancer than people who live in less-polluted areas.<sup><a href="#fn1" id="ref1">1</a></sup></p>
+            <div class = "indent">Air pollution is any physical, chemical or biological particles that changes the natural atmosphere The IARC has classified many components of outdoor air pollution as carcinogens, including diesel engine exhaust, solvents, metals, and dust. Not only does air pollution strip away the earth's clear skies but negatively impacts our health.</div>
+          <p id = "sky">It takes only 5 days for a jet stream in China to carry the air pollution to the United States.<sup><a href="#fn2" id="ref2">2</a></sup></p>
+            <div class = "indent">The earth's wind currents are all connected, and with the rise of climate change may cause shifts in the winds patterns. Even though it might seem like pollution in faraway places such as China are not your problem, they are and affect all of our air quality.</div>
+          <p id = "sky">The people more susceptible to high ozone levels are children, elderly, people with lung disease, and people who are active outdoors.<sup><a href="#fn3" id="ref3">3</a>
+            <div class = "indent">Ozone is one of the many causes of asthma and is linked to the increase in asthma in our population and is shown to cause COPD, shortness of breath, increase in susceptibility to infections of the lung among others. WIth more pollution in our air this will only worsen, a nice run outside should not put your lungs at risk.</div>
+            <h3><center>  <p id = "sky">Ways you can help!</div></h3>
+            <div class = "indent">Ways you can help is to minimize your impact on the atmosphere such as using public transportation, biking or carpooling instead of using your car; decrease your use of harmful chemicals; everyday things like plastic bottles, and even nail polish can break up into many small particles and turns into carcinogens; and spreading this on social media to inform other people.</div>
+        </div>
+
+        <div id = "landsect">
+          <h1 class = "subheading" id = "landbanner"><center>Facts & Stats About the Land, Including People, Deforestation, Etc.</center></h1>
+          <p id = "land">While children make up 10% of the world’s population, over 40% of the global burden of disease falls on them. More than 3 million children under age five die annually from environmental factors.<sup><a href="#fn4" id="ref4">4</a></sup></p>
+            <div class = "indent">Air pollution, and unsafe water and environmental factors that affect million of children around the world and will only get progressively worse with time if we do nothing about it.</div>
+          <p id = "land">5000 people die every day as a result of drinking unclean water.<sup><a href="#fn5" id="ref5">5</a></sup></p>
+            <div class = "indent">The most prevalent water quality problem is eutrophication, which in plain terms is the runoff from agriculture, domestic sewage and other pollutants. All the systems of earth are interconnected and the pollutants in the air will eventually end up in bodies of water and vice versa. Pollutants are the cause of many deaths and everyone should not accept this and take action.</div>
+          <p id = "land">The production of plastic uses around eight percent of the world's oil production (bioplastics are not a good solution as they require food source crops).<sup><a href="#fn6" id="ref6">6</a></sup></p>
+            <div class = "indent">Most plastics are unnecessary and the fact that they take up 8% is overwhelming and detrimental to the environment. Oil production is a major contributor to pollution and the earth's air quality. Bioplastics also contribute to pollution because they use food crops which then contribute to unclean water and more death.</div>
+              <center><h3><p id = "land">Ways you can help!</p></h3></center>
+              <div class = "indent">Ways you can help to diminish these problems is to donate or volunteer to charities which help to combat these tragedies; reduce your impact on the environment by buying less goods that are made with oil and take a toll on the environment, such as plastic bottles, or even meat products; or reduce your footprint by carpooling, taking the bus, taking shorter showers, and remembering to turn off appliances when not in use.</div>
+         </div>
+          
+         <div id = "seasect">
+            <h1 class = "subheading" id = "seabanner"><center>Facts & Stats about the Ocean</center></h1>
+            <p id = "ocean">Over 1 million seabirds and 100,000 sea mammals are killed by pollution every year.<sup><a href="#fn7" id="ref7">7</a></sup></p>
+              <div class = "indent">Trash that ends up in the ocean is not only detrimental to humans health but also to animals. Sea animals can mistakenly eat the trash and then not have enough room in their stomachs to eat food and then die of starvation. Even throwing away your trash will fix this problem because non-biodegradable and non-recyclable products like straws have a risk of being eaten by birds and causing death.</div>
+            <p id = "ocean">According to National Oceanic and Atmospheric Administration (NOAA), 80 percent of pollution in marine environment comes from the land through sources like runoff.<sup><a href="#fn8" id="ref8">8</a></sup></p>
+              <div class = "indent">The best way to eliminate the pollution in the ocean is to cut off the source which is the pollution on the land, because most of the pollution of the land will eventually go into streams that lead into the ocean.</div>
+            <p id = "ocean">Billions of pounds of plastic can be found in swirling convergences in the oceans making up about 40 percent of the world's ocean surfaces. 80 percent of pollution enters the ocean from the land.<sup><a href="#fn9" id="ref9">9</a></sup></p>
+              <div class = "indent">Plastic never actually biodegreates even in hundreds of years, the closest it comes is breaking apart into million of tiny particles that like particles in the air and cause many adverse effects like killing sea life.</div>
+              <center>  <h3><p id = ocean>Ways you can help!</p></h3>
+              <div class = "indent">Ways you can help to diminish these problems is to donate or volunteer to charities which help to combat these tragedies; reduce your impact on the environment by buying less goods that are made with oil and take a toll on the environment, such as plastic bottles, or even meat products; reduce your footprint by carpooling, taking the bus, taking shorter showers, and remembering to turn off appliances when not in use; or picking up trash whenever you see it. </div>
+          </div>
+      <!-- trying something --> 
+          <div id = "sourcesect">
+            <a href=target="_blank"></a>
+            <h1 class = "subheading" id = "sourcebanner"><center>Sources of Our Facts & Stats</center></h1>
+           <p id = "source"><sup id="fn1">1. “51 Facts About Pollution.” Conserve Energy Future, 25 Dec. 2016, <a href="https://www.conserve-energy-future.com/various-pollution-facts.php."target="_blank">www.conserve-energy-future.com/various-pollution-facts.php.</a><a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup></p>
+          <p id = "source"><sup id="fn2">2. “51 Facts About Pollution.” Conserve Energy Future, 25 Dec. 2016, <a href="https://www.conserve-energy-future.com/various-pollution-facts.php."target="_blank">www.conserve-energy-future.com/various-pollution-facts.php.</a><a href="#ref2" title="Jump back to footnote 2 in the text.">↩</a></sup></p>
+          <p id = "source"><sup id="fn3">3. “51 Facts About Pollution.” Conserve Energy Future, 25 Dec. 2016, <a href="https://www.conserve-energy-future.com/various-pollution-facts.php."target="_blank">www.conserve-energy-future.com/various-pollution-facts.php.</a><a href="#ref3" title="Jump back to footnote 3 in the text.">↩</a></sup></p>
+          <p id = "source"><sup id="fn4">4. “11 Facts About Pollution.” DoSomething.org | Volunteer for Social Change, <a href="https://www.dosomething.org/us/facts/11-facts-about-pollution"target="_blank">www.dosomething.org/us/facts/11-facts-about-pollution.</a><a href="#ref4" title="Jump back to footnote 4 in the text.">↩</a></sup></p>
+          <p id = "source"><sup id="fn5">5. “51 Facts About Pollution.” Conserve Energy Future, 25 Dec. 2016, <a href="https://www.conserve-energy-future.com/various-pollution-facts.php."target="_blank">www.conserve-energy-future.com/various-pollution-facts.php.</a><a href="#ref5" title="Jump back to footnote 5 in the text.">↩</a></sup></p>
+          <p id = "source"><sup id="fn6">6. EcoWatch. “22 Facts About Plastic Pollution (And 10 Things We Can Do About It).” EcoWatch, EcoWatch, 14 June 2018, <a href="https://www.ecowatch.com/22-facts-about-plastic-pollution-and-10-things-we-can-do-about-it-1881885971.html"target="_blank">www.ecowatch.com/22-facts-about-plastic-pollution-and-10-things-we-can-do-about-it-1881885971.html.</a><a href="#ref6" title="Jump back to footnote 6 in the text.">↩</a></sup></p>
+          <p id = "source"><sup id="fn7">7. “11 Facts About Pollution.” DoSomething.org | Volunteer for Social Change, <a href="https://www.dosomething.org/us/facts/11-facts-about-pollution"target="_blank">www.dosomething.org/us/facts/11-facts-about-pollution.</a><a href="#ref7" title="Jump back to footnote 7 in the text.">↩</a></sup></p>
+          <p id = "source"><sup id="fn8">8. Bradford, Alina. “Pollution Facts & Types of Pollution.” LiveScience, Purch, 27 Feb. 2018, <a href="https://www.livescience.com/22728-pollution-facts.html"target="_blank">www.livescience.com/22728-pollution-facts.html.</a><a href="#ref8" title="Jump back to footnote 8 in the text.">↩</a></sup></p>
+          <p id = "source"><sup id="fn9">9. EcoWatch. “22 Facts About Plastic Pollution (And 10 Things We Can Do About It).” EcoWatch, EcoWatch, 14 June 2018, <a href="https://www.ecowatch.com/22-facts-about-plastic-pollution-and-10-things-we-can-do-about-it-1881885971.html"target="_blank">www.ecowatch.com/22-facts-about-plastic-pollution-and-10-things-we-can-do-about-it-1881885971.html.<</a><a href="#ref9" title="Jump back to footnote 9 in the text.">↩</a></sup></p>
+          </div>
+          <div id = "sourcesubmit">
+            <h1 id = "submissionheader" class = "subheading"><center>Submissions from our readers</center></h1>
+            <center><h3><p id = "submission">Disclaimer! We do not guarantee that any of these facts are true, they are merely submissions from our readers with their sources included</p></h3></center>
+            <center><button class="read-more-trigger" onclick=" window.open('https://docs.google.com/forms/d/e/1FAIpQLSdgHPr7_LnwwvEd6G1gsff_I1EU9Owvj71KAfCVFwlWayniMA/viewform?usp=pp_url','_blank')"> Submit your own fact!</button></center>
+          </div>
+    </div>
+           
+          
+          
+          
+          
+          
+          
+          
+<!-- VOLUNTEER -->
+    <center><h1 class = "room" class = "heading" id = "volunteer">Volunteer Sites</h1></center>
+
+
+
+<div>
+  <input type="checkbox" class="read-more-state" id="post-2" />
+
+
+  <ul class="read-more-wrap" id = "volunteerspace1">
+
+    <div class="contain">
+
+      <img src="tuleponds.jpg" alt="Avatar" class="volunteerimage">
+      <div class="overlay">
+        <div class="textName"><a href="https://msnucleus.org/classes/tule.htm" target = "_blank">Tule Ponds</a></div>
+        <div class = "textName2">Tule Ponds is a training center for students adults interesting in attaining restoration skills.
+        It is based in Fremont, California and serves as a home to several forms of wildlife. Volunteers may help by planting
+      special flora and fauna intended to replace harmful effects from invasive species. Volunteers may also perform other
+    tasks such as mulching and removing invasive species. </div>
+      </div>
+    </div>
+    <p><div class="contain">
+      <img src="lakecunningham.jpg" alt="Avatar" class="volunteerimage">
+      <div class="overlay">
+        <div class="textName"><a href="https://lakecunninghamnativegarden.org/volunteer/" target = "_blank">Lake Cunningham</a></div>
+        <div class = "textName2"> Lake Cunningham welcomes volunteers looking to help the environment. The lake is located in San Jose, California
+        and involves tasks such as invasive plant removal, mulching, planting, and watering. Most available workdays are on Saturdays.
+      Find out more about how you can contribute by clicking "Lake Cunningham"</div>
+      </div>
+    </div></p>
+    <span style="list-style-type:none"><p><li class="read-more-target"><div class="contain"><span>
+      <img src="ourcityforest.jpg" alt="Avatar" class="volunteerimage">
+      <div class="overlay">
+        <div class="textName"><a href="http://www.ourcityforest.org/volunteer-2/#volunteer" target = "_blank">Our City Forest</a></div>
+        <div class = "textName2"> Join Our City Forest's planting team by signing up to volunteer. The organization includes several
+        tasks such as planting, transplanting, maintaining care of trees, shaping land to drought-resistant landscapes. Other
+      volunteering options are available as well. The main office is located in San Jose.
+      Check the link above to find more information about Our City Forest volunteering. </div>
+      </div>
+    </div></span></li></p></span>
+    <span style="list-style-type:none"><p><li class="read-more-target"><div class="contain"><span>
+      <img src="garden4env.jpg" alt="Avatar" class="volunteerimage">
+      <div class="overlay">
+        <div class="textName"><a href="https://www.gardenfortheenvironment.org/volunteer/" target = "_blank">Garden for the Environment</a></div>
+        <div class = "textName2"> Garden for the Environment is a San Francisco based garden designed to mitigate some hazardous effects of
+        city living. Drop-in garden volunteers are welcomed every Wednesday and Saturday. All ages are welcome and no previous gardening
+      experience is required. Tasks involve composting, planting, pruning, weeding, etc.   </div>
+      </div>
+    </div></span></li></p></span>
+    <span style="list-style-type:none"><li class="read-more-target"><div class="contain"><span>
+      <img src="grassroots.jpg" alt="Avatar" class="volunteerimage">
+      <div class="overlay">
+        <div class="textName"><a href="http://www.grassrootsecology.org/volunteer/" target = "_blank">Grassroots Ecology</a></div>
+        <div class = "textName2"> Located in Palo Alto, Grassroots Ecology is a nonprofit organization striving for a change in environment.
+        Volunteer services include a variety of tasks, such as creek monitoring, installing rain gardens and water barrels, weeding,
+      and planting. You may choose to focus on either habitat restoration, community science, and greening urban watersheds. </div>
+      </div>
+    </div></span></li></span><span style="list-style-type:none"><p><li class="read-more-target"><div class="contain"><span>
+      <img src="sfbay.jpg" alt="Avatar" class="volunteerimage">
+      <div class="overlay">
+        <div class="textName"><a href="https://www.savesfbay.org/volunteer/calendar" target = "_blank">Save the Bay</a></div>
+        <div class = "textName2"> Volunteer while having fun by cooperating with Save the Bay. Attached is a calendar of all available
+        events to volunteer. You may volunteer at coastal areas, wetlands, rivers, streams, and other places to make an impactful change
+      to the environment. Sign up now! </div>
+      </div>
+    </div></span></li></p></span>
+
+    <span style="list-style-type:none"><li class="read-more-target"><div class="contain">
+      <img src="heck.png">
+  </div></li></span>
+
+
+    <span style="list-style-type:none"><li class="read-more-target"><div class="contain">
+      <img src="heck.png">
+    </div></li></span>
+  </ul>
+
+<label for="post-2" class="read-more-trigger" class = "my-btn-cent"></label>
+</div>
+</div>
+
+
+<center><h1 class="room" class = "heading" id = "local">Local</h1></center>
+
+
+
+
+
+<!--<h2>Responsive Contact Section</h2>
+<p>Resize the browser window to see the effect.</p>-->
+
+<div class="voluntcontainer">
+  <div style="text-align:center">
+    <h2 class = "subheading">Add Volunteer Options</h2>
+    <p>Not enough Volunteer Options in your area? Suggest some for us! We'll verify them and add them to the map: </p>
+    <p>*required fields</p>
+  </div>
+  <div class="voluntrow">
+    <div class="voluntcolumn">
+      <div id="map" style="width:100%;height:700px"></div>
+    </div>
+    <div class="voluntcolumn">
+      <form id = "voluntcontact" >
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="email">Email *</label>
+        <input type="text" id="email" name="email" placeholder="Your email.." required>
+
+        <label for="orgname">Organization/Place Name *</label>
+        <input type="text" id="orgname" name="organizationname" placeholder="Name of place.." required>
+
+
+        <label for="country">Country *</label>
+        <input type="text" id="voluntcountry" name="volunteercountry" placeholder="Country.." required>
+
+
+
+        <label for="voluntzip">Zip Code *</label>
+        <input type="text" id="voluntzip" name="volunteerzip" placeholder="Zip Code of Volunteer Area.." required>
+
+
+        <label for="subject">Problems & Volunteer *</label>
+        <textarea id="subject" name="subject" placeholder="Give a brief description of environmental problems in your area and volunteer 
+options to help alleviate them.." style="height:170px" required></textarea>
+
+        <p id = "localsubmit"></p>
+<div>
+        <button type="submit" class = "voluntsubmit" <span>Submit</span></button>
+</div>
+      </form>
+    </div>
+  </div>
+  
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src = "eos.js"> </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVaUTsc_KSJ3BfNxrXAhPKYxFfCuaRPQA&callback=myMap"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVaUTsc_KSJ3BfNxrXAhPKYxFfCuaRPQA&callback=myMap"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+<div id = "confirmation" aria-hidden = "true" style = "display:none;">
+  <p>Submission confirmed! Thank you for contributing. </p>
+</div>
+
+
+
+
+<!-- About -->
+    <div id = "about">
+      <h1 class = "heading" class = "room"><center>About</center></h1>
+      <div class="background">
+        <div class="transbox">
+
+          <div><center>
+            <h2 class = "subheading">Our Mission</h2>
+          </center></div>
+          <div class = "indent">
+            <p>Spread awareness of the <strong>MAGNITUDE</strong> of the problem and what can be done to <strong>MITIGATE</strong> its effects.
+              A <strong><em>LITTLE</em></strong> step can make a <strong><em>BIG</em></strong> difference. From sharing news, to volunteering,
+              to making donations: any step can bring us closer to our goal.</p>
+          </div>
+
+          <div><center>
+            <h2 class = "subheading">About Us</h2>
+          </center></div>
+          <div class = "indent">
+            <p>We are six students at the Girls Who Code Summer Immersion Program at Intuit,
+              and we made this as our final project to raise awareness for the pressing issues regarding our environment.
+              Girls Who Code gave us all a wonderful opportunity to explore the computer science field.
+              After all of our hard work, we hope you enjoyed looking at our site and will keep in mind that every little action counts in protecting our world.</p>
+          </div>
+
+        </div>
+      </div>
+
+<!-- People table -->
+      <table style="width:100%">
+        <tr>
+          <td><img src = "AdinaChen.jpg" alt="Adina" style="height:100px;"></td>
+          <td class = "tableText">Adina Chen: I am a rising senior at Irvington High School. I love boba (food in general) and marching band.</td>
+          <td><img src = "AngelinaLuo.jpg" alt="Angelina" style="height:100px;"></td>
+          <td class = "tableText">Angelina Luo: I am a rising senior at Arroyo High School. I enjoy piano and playing video games.</td>
+        </tr>
+        <tr>
+          <td><img src = "SophiaChadsey.png" alt="Sophia" style="height:100px;"></td>
+          <td class = "tableText">Sophia Chadsey: I am a rising senior in Santa Clara High School. I love boba and playing the violin and piano as a part of San Jose Youth Symphony.</td>
+          <td><img src = "NancyNguyen.jpg" alt="Nancy" style="height:100px;"></td>
+          <td class = "tableText">Nancy Nguyen: I am a rising senior at Milpitas High School. I enjoy orchestra, marching band, and physics.</td>
+        </tr>
+        <tr>
+          <td><img src = "MichelleLim.jpg" alt="Michelle" style="height:100px;"></td>
+          <td class = "tableText">Michelle Lim: I am a rising senior at American High School. I love playing volleyball, being a part of the robotics team, and partaking in the UNICEF and MUN clubs in school.</td>
+          <td><img src = "KatelynYu.jpg" alt="Katelyn" style="height:100px;"></td>
+          <td class = "tableText">Katelyn Yu: I am a rising junior at Notre Dame High School. I enjoy being a part of my school's golf team, a brown belt in karate, and playing piano.</td>
+        </tr>
+      </table>
+    </div>
+    <div id = "edit">
+      <p>Copyright © EOS: Earth, Ocean, Sky™</p>
+      <p>Last edit: August 1, 2018</p>
+    </div>
+      
+    
+  
+  
+  </body>
+</html>
