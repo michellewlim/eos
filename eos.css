@@ -495,6 +495,7 @@ p {
 }
 #landbanner{
     background-image: url("arialland.png");
+    opacity:0.6;
 }
 #seabanner{
     background-image: url("oceanheader.JPG.JP2");
