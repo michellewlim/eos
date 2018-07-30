@@ -294,22 +294,22 @@ input, select, button{
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  a:link {
+  .voluntlink a:link {
     color: white;
     font-size: 50px;
       text-decoration: none;
   }
   
-  a:visited {
+  .voluntlink a:visited {
       color: white;
       text-decoration: none;
   }
   
-  a:hover {
+  .voluntlink a:hover {
       color: grey;
   }
   
-  a:active {
+  .voluntlink a:active {
       color: white;
     }
   .room{
