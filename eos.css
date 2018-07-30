@@ -495,10 +495,10 @@ p {
 }
 #landbanner{
     background-image: url("arialland.png");
-    opacity:0.6;
+    
 }
 #seabanner{
-    background-image: url("oceanheader.JPG.JP2");
+    background-image: url("ocean.png");
 }
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
