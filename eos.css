@@ -358,6 +358,8 @@ input, select, button{
     line-height: 2;
     border: 1px solid #ddd;
     border-radius: .5em;
+    padding: 50px;
+    margin:0 auto;
   
   }
   
@@ -365,13 +367,13 @@ input, select, button{
     padding-right: 40px;
   }
   
-  .my-btn-cent {
+/*  .my-btn-cent {
   
       display:block;
       margin:50%;
   
   }
-  
+*/  
   
   body {
     font-family: Arial, Helvetica, sans-serif;
