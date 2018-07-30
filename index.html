@@ -116,7 +116,52 @@
     </div>
     
 <!-- call Java Script as part of carousel -->
-    <script src = "eos.js"> </script>
+    <script>
+      var slideIndex = 0;
+      showDivs(slideIndex);
+      carousel();
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " w3-white";
+      }
+
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1}
+          x[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " w3-white";
+          setTimeout(carousel, 5000); // Change image every 5 seconds
+      }
+    </script>
     
 <!-- News -->
     <div id = "news">
@@ -131,77 +176,7 @@
         <p id = "factsstats">Here are some facts and stats on the devasting effects caused by ignoring our environments needs.</p>
       </center>
 
-<!-- carousel --> <!--
-      <div class="row">
-        <div class="column">
-          <img src="usa.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-        </div>
-        <div class="column">
-          <img src="world.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-        </div>
-        <div class="column">
-          <img src="reef.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-        </div>
-        <div class="column">
-          <img src="forests.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-        </div>
-        <div class="column">
-          <img src="grapheos.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-        </div>
-      </div>
-
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-
-          <div class="factSlides">
-            <div class="numbertext">1 / 5</div>
-            <img src="usa.png" style="width:100%">
-          </div>
-
-          <div class="factSlides">
-            <div class="numbertext">2 / 5</div>
-            <img src="world.png" style="width:100%">
-          </div>
-
-          <div class="factSlides">
-            <div class="numbertext">3 / 5</div>
-            <img src="reef.png" style="width:100%">
-          </div>
-
-          <div class="factSlides">
-            <div class="numbertext">4 / 5</div>
-            <img src="forests.png" style="width:100%">
-          </div>
-          
-          <div class="factSlides">
-            <div class="numbertext">5 / 5</div>
-            <img src="grapheos.png" style="width:100%">
-          </div>
-
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
-
-
-          <div class="column">
-            <img class="demo cursor" src="usa.png" style="width:100%" onclick="currentSlide(1)" alt="Average Household Carbon Emissions">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="world.png" style="width:100%" onclick="currentSlide(2)" alt="Number of Deaths from Outdoor Air Pollution (2016)">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="reef.png" style="width:100%" onclick="currentSlide(3)" alt="Great Barrier Reef Wipeout">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="forests.png" style="width:100%" onclick="currentSlide(4)" alt="Top 5 World's Forests">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="grapheos.png" style="width:100%" onclick="currentSlide(5)" alt="Sulfur Dioxide, by World Region.">
-          </div>
-        </div>
-      </div> -->
-      
+<!-- carousel -->
       <div class="row">
         <div class="column">
           <img src="usa.png" style="width:100%" onclick="openModal();currentFSlides(1)" class="hover-shadow cursor">
@@ -257,7 +232,44 @@
           </div>
 
 <!-- Call js -->
-    <script src = "eosFactCarousel.js"> </script>
+    <script> 
+      function openModal() {
+        document.getElementById('myModal').style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+      }
+
+      var slideFIndex = 1;
+      slideFSlides(slideFIndex);
+
+      function plusSlides(m) {
+        slideFSlides(slideFIndex += m);
+      }
+
+      function currentFSlides(m) {
+        slideFSlides(slideFIndex = m);
+      }
+
+      function slideFSlides(m) {
+        var t;
+        var slides = document.getElementsByClassName("factSlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (m > slides.length) {slideFIndex = 1}
+        if (m < 1) {slideFIndex = slides.length}
+        for (t = 0; t < slides.length; t++) {
+            slides[t].style.display = "none";
+        }
+        for (t = 0; t < dots.length; t++) {
+            dots[t].className = dots[t].className.replace(" active", "");
+        }
+        slides[slideFIndex-1].style.display = "block";
+        dots[slideFIndex-1].className += " active";
+        captionText.innerHTML = dots[slideFIndex-1].alt;
+      }
+    </script>
       
 <!-- Fact and stats -->
       
