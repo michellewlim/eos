@@ -539,7 +539,7 @@ img {vertical-align: middle;}
 .column {
   float: center;
   width: 20%;
-  display: inline-block;
+  display: inline;
 }
 
 /* The Modal (background) */
