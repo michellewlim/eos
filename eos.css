@@ -354,7 +354,7 @@ input, select, button{
     display: inline-block;
     padding: .3em;
     color: #666;
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 2;
     border: 1px solid #ddd;
     border-radius: .5em;
@@ -362,7 +362,7 @@ input, select, button{
   margin-left: 650;
   margin-bottom: 20;
   z-index: 8;
-padding-bottom: 10px;padding-top: 10px; padding-left:20px; padding-right:20px;
+padding-bottom: 5px;padding-top: 5px; padding-left:20px; padding-right:20px;
   }
   
   #volunteerspace1{
