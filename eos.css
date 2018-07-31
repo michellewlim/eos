@@ -563,12 +563,7 @@ p {
   font-size: 20px;
   font-family: "Garamond", "Baskerville Old Face", serif;
 }
-div.centercenter {
-  text-align: center;
-}
-div.indent{
-  text-align:center;
-}
+
 
 #factsstats{
   font-size: 20px;
@@ -592,16 +587,7 @@ div.indent{
   background-image: url("stats.png");
 
 }
-#skybanner{
-    background-image: url("blue-clouds-day-53594.jpg");
-}
-#landbanner{
-    background-image: url("land.png");
-    
-}
-#seabanner{
-    background-image: url("ocean.png");
-}
+
 .factstatcolumn {
       float: center;
       width: 50%;
