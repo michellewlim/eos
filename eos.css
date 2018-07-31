@@ -557,6 +557,7 @@ img {vertical-align: middle;}
   padding: 0;
   width: 90%;
   max-width: 1200px;
+  white-space: nowrap;
 }
 
 .factSlides {
