@@ -531,7 +531,7 @@ img {vertical-align: middle;}
 }
 
 .column {
-  float: left;
+  float: center;
   width: 20%;
 }
 
