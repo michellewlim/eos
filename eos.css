@@ -830,7 +830,7 @@ h2
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-60%, -50%);
-    text-align: right;
+    text-align: center;
   }
 
   .c {
@@ -916,7 +916,7 @@ h2
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: right;
+    text-align: center;
  }
 
 
@@ -964,7 +964,7 @@ h2
    -webkit-transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%);
    transform: translate(-100%, -50%);
-   text-align: right;
+   text-align: center;
 }
 
 
@@ -1011,7 +1011,7 @@ h2
    -webkit-transform: translate(-50%, -50%);
    -ms-transform: translate(-50%, -50%);
    transform: translate(-80%, -50%);
-   text-align: right;
+   text-align: center;
 }
 
 
