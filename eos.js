@@ -59,6 +59,7 @@ console.log("here");
       $inputs.prop("disabled", false);
       $('#voluntcontact input[type="text"]').val('');
       $('#voluntcontact textarea[name = "subject"]').val('');
+      $('#voluntcontact input[type = "email"]').val('');
       document.getElementById("localsubmit").innerHTML = "Submission successful! Thank you for your contribution."
       //window.location = '#local';
         
