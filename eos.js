@@ -1,3 +1,53 @@
+//parallax scrolling- sky
+var i = 0;
+function myFunctionAir() {
+  property1 = document.getElementById("centered_cap1")
+  if (i%2 == 0){
+    document.getElementById("bgimg-1").style.backgroundImage = "url('sky_pollute.jpg')";
+    property1.style.backgroundColor = "transparent";
+    property1.style.color = "white";
+    i++;
+  }
+  else{
+    document.getElementById("bgimg-1").style.backgroundImage = "url('sky.jpg')";
+    i++;
+    property1.style.backgroundColor = "transparent";
+    property1.style.color = "black";
+  }
+}
+//parallax scrolling- land
+var a = 0;
+function myFunctionLand() {
+    property2 = document.getElementById("centered_cap2")
+  if (a%2 == 0){
+    document.getElementById("bgimg-2").style.backgroundImage = "url('land_pollute.jpg')";
+    a++;
+    property2.style.backgroundColor = "transparent";
+    property2.style.color = "white";
+  }
+  else{
+    document.getElementById("bgimg-2").style.backgroundImage = "url('land.jpg')";
+    a++;
+    property2.style.backgroundColor = "transparent";
+    property2.style.color = "black";
+  }
+}
+//parllax scrolling- ocean
+var b = 0;
+function myFunctionOcean() {
+    property3 = document.getElementById("centered_cap3")
+  if (b%2 == 0){
+    document.getElementById("bgimg-3").style.backgroundImage = "url('ocean_pollute.jpg')";
+    b++;
+    property3.style.backgroundColor = "transparent";
+  }
+  else{
+    document.getElementById("bgimg-3").style.backgroundImage = "url('ocean.jpg')";
+    b++;
+    property3.style.backgroundColor = "transparent";
+  }
+}
+
 // VOLUNTEER CONTACT US + MAP
 // Variable to hold request
 var request;
